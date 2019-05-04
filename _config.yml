@@ -1,6 +1,6 @@
 # Site/SEO settings
 email: taskmanager205@gmail.com
-baseurl: ""
+baseurl: "randomramblings.github.io"
 permalink: /:year/:month/:day/:title/
 google_analytics:
 
