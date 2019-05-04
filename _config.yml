@@ -1,0 +1,69 @@
+# Site/SEO settings
+email: taskmanager205@gmail.com
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+google_analytics:
+
+name: Anonymous Engineer
+title: Random Ramblings
+description: >
+  A blog to express what can't be.
+url: http://barber.samesies.io
+default_img: /assets/images/seo.jpg
+social:
+  - name: github
+    url: https://github.com/samesies
+
+# Contact settings
+contact_img: /assets/images/placeholder-28.jpg
+formcarry: https://formcarry.com/s/HkIo0nMb7
+
+# Author settings
+author:
+  - name: Anonymous Engineer
+    bio: Born in India, Engineer by profession, Thinker by build.
+    url: http://thomasvaeth.com
+
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts:
+      - 'tag.html'
+    title: 'Random Ramblings'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - node_modules
+  - .DS_Store
+  - barber.jpg
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - README.md
